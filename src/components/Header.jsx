@@ -5,18 +5,23 @@ import Careers from './Careers';
 function Header() {
     var headerStyle = {
         border: 'solid lightGrey 1px',
-        height: '100px',
+        height: '50px',
         gridArea: '3 / 1 / 4 / 7',
-        color: 'white',
+        color: 'black',
         textAlign: 'center',
         fontSize: '30px',
         wordSpacing: '20px',
         letterSpacing: '5px',
-         paddingLeft: '20px',
+        paddingLeft: '20px',
+        padding: '30px' ,
+        borderTop: 'none',
+        borderLeft: 'none',
+        borderRight: 'none',
+         
     }
     return (
         <div style={headerStyle}>
-        <Link to="/features">Features</Link>  <Link to="/templates">Templates</Link>  <Link to="/support">Support</Link>  <Link to="/locations">Locations</Link> 
+        <Link to="/features" style={{ color: 'black', textDecoration: 'none' }}>Features</Link>  <Link to="/templates" style={{ color: 'black', textDecoration: 'none' }}>Templates</Link>  <Link to="/support" style={{ color: 'black', textDecoration: 'none' }}>Support</Link>  <Link to="/locations" style={{ color: 'black', textDecoration: 'none' }}>Locations</Link> 
         </div> 
     );
 }
