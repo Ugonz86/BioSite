@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from './Header';
-import Header2 from './Header2';
 import campus from '../assets/images/campus.jpg';
 import pic1 from '../assets/images/pic1.png';
 import twitter from '../assets/images/twitter.png';
@@ -17,13 +16,13 @@ function App() {
   var div1 = { gridArea: ' 1 / 1 / 2 / 7; '};
   var div2 = { gridArea: '1/ 1 / 3 / 7', overflow: 'hidden', };
   var div3 = { gridArea: '3 / 1 / 5 / 7'};
-  var div4 = { gridArea: '4 / 1 / 5 / 7', color: 'black', textAlign: 'center', fontSize: '40px', paddingTop: '30px', height: '200px' };
+  var div4 = { gridArea: '4 / 1 / 5 / 7', color: 'black', textAlign: 'center', fontSize: '40px', paddingTop: '50px' };
 
-  var div5 = { gridArea: '5 / 1 / 7 / 4', backgroundColor: 'white', color: 'black', width: '700px', lineHeight: '25px',
-    paddingLeft: '10px', marginLeft: '25%', paddingTop: '20px' };
+  var div5 = { gridArea: '5 / 1 / 7 / 4', backgroundColor: 'white', color: 'black', width: '500px', lineHeight: '25px',
+    paddingLeft: '10px', marginLeft: '12%', paddingTop: '50px' };
 
-  var div6 = { gridArea: '5 / 4 / 7 / 7', backgroundColor: 'white', color: 'black', width: '700px', lineHeight: '25px',
-    paddingLeft: '10px', position: 'relative', paddingTop: '20px', marginLeft: '15%' };
+  var div6 = { gridArea: '5 / 4 / 7 / 7', backgroundColor: 'white', color: 'black', width: '500px', lineHeight: '25px',
+    paddingLeft: '10px', position: 'relative', paddingTop: '50px', marginLeft: '15%' };
   
   var campusStyling = {
     width: '100%',
@@ -47,7 +46,7 @@ function App() {
     <div style={parent}>
       <div style={div1}></div>
       <div style={div2}> <img src={campus} style={campusStyling} alt='a intro' /> </div>
-      <div style={div3}><Header2 /></div>
+      <div style={div3}><Header /></div>
       <div style={div4}>Executive Team</div>
       <div style={div5}> <img src={pic1} style={picStyle} alt='a intro' />
         <h3>Anthony Casalena</h3>
