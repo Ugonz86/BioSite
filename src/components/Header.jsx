@@ -13,8 +13,7 @@ function Header() {
         wordSpacing: '20px',
         letterSpacing: '5px', 
         padding: '30px',
-        fontFamily: 'Montserrat, sans-serif'
-        
+        fontFamily: 'Montserrat, sans-serif',
     }
 
     var logoStyle = {
@@ -26,8 +25,8 @@ function Header() {
     return (
       
       <div style={header2Style}>
-      <span style={logoStyle}> BioSite </span>
-        <Link to="/AboutUs" style={{ color: 'white', textDecoration: 'none' }}>AboutUs</Link>  <Link to="/Careers" style={{ color: 'white', textDecoration: 'none' }}>Careers</Link>  <Link to="/ourteam" style={{ color: 'white', textDecoration: 'none' }}>OurTeam</Link>  <Link to="/locations" style={{ color: 'white', textDecoration: 'none' }}>Locations</Link> 
+      {/* <span style={logoStyle}> BioSite </span> */}
+      <Link to="/" style={logoStyle}> BioSite</Link> <Link to="/AboutUs" style={{ color: 'white', textDecoration: 'none' }}>AboutUs</Link>  <Link to="/Careers" style={{ color: 'white', textDecoration: 'none' }}>Careers</Link>  <Link to="/ourteam" style={{ color: 'white', textDecoration: 'none' }}>OurTeam</Link>  <Link to="/locations" style={{ color: 'white', textDecoration: 'none' }}>Locations</Link> 
       </div> 
     );
 }
