@@ -3,31 +3,27 @@ import { Link } from 'react-router-dom';
 import Careers from './Careers';
 
 function Header2() {
-    var header2Style = {
-        backgroundColor: 'black',
+    var headerStyle = {
+        border: 'solid lightGrey 1px',
         height: '50px',
-        gridArea: '1 / 1 / 2 / 7',
-        color: 'white',
+        gridArea: '3 / 1 / 4 / 7',
+        color: 'black',
+        
         textAlign: 'center',
         fontSize: '30px',
         wordSpacing: '20px',
-        letterSpacing: '5px', 
-        padding: '30px'   
-        
+        letterSpacing: '5px',
+        paddingLeft: '20px',
+        padding: '30px' ,
+        borderTop: 'none',
+        borderLeft: 'none',
+        borderRight: 'none',
+        fontFamily: 'Montserrat, sans-serif',
     }
-
-    var logoStyle = {
-      float: 'left',
-      
-      
-    }
-
     return (
-      
-      <div style={header2Style}>
-      <span style={logoStyle}> BioSite </span>
-        <Link to="/AboutUs" style={{ color: 'white', textDecoration: 'none' }}>AboutUs</Link>  <Link to="/Careers" style={{ color: 'white', textDecoration: 'none' }}>Careers</Link>  <Link to="/ourteam" style={{ color: 'white', textDecoration: 'none' }}>OurTeam</Link>  <Link to="/locations" style={{ color: 'white', textDecoration: 'none' }}>Locations</Link> 
-      </div> 
+        <div style={headerStyle}>
+        <Link to="/features" style={{ color: 'black', textDecoration: 'none' }}>Features</Link>  <Link to="/templates" style={{ color: 'black', textDecoration: 'none' }}>Templates</Link>  <Link to="/support" style={{ color: 'black', textDecoration: 'none' }}>Support</Link>  <Link to="/locations" style={{ color: 'black', textDecoration: 'none' }}>Locations</Link> 
+        </div> 
     );
 }
 
